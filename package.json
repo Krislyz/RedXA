@@ -1,0 +1,44 @@
+{
+  "name": "redxa",
+  "productName": "RedXA",
+  "version": "1.0.0",
+  "description": "**RedXA** delivers real-time Israeli Red Alert missile warnings to your VR headset via XSOverlay.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^36.4.0",
+    "electron-builder": "^26.0.12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Krislyz/RedXA.git"
+  },
+  "keywords": [],
+  "author": "Krislyz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Krislyz/RedXA/issues"
+  },
+  "homepage": "https://github.com/Krislyz/RedXA#readme",
+  "build": {
+    "appId": "com.krislyz.redxa",
+    "productName": "RedXA",
+    "icon": "icon.ico",
+    "win": {
+      "target": "nsis",
+      "icon": "icon.ico",
+      "executableName": "RedXA",
+      "legalTrademarks": "RedXA"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "RedXA",
+      "license": "LICENSE"
+    }
+  }
+}
